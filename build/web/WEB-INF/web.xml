@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>UserRegistration</servlet-name>
+        <servlet-class>BUSINESS.UserRegistration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckLogin</servlet-name>
+        <servlet-class>BUSINESS.CheckLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckAdmin</servlet-name>
+        <servlet-class>BUSINESS.CheckAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddAccountDetails</servlet-name>
+        <servlet-class>BUSINESS.AddAccountDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddHoneypotAccountDetails</servlet-name>
+        <servlet-class>BUSINESS.AddHoneypotAccountDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActivationRequests</servlet-name>
+        <servlet-class>BUSINESS.ActivationRequests</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActivateAccount</servlet-name>
+        <servlet-class>BUSINESS.ActivateAccount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UnblockAccount</servlet-name>
+        <servlet-class>BUSINESS.UnblockAccount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FetchUserInformation</servlet-name>
+        <servlet-class>BUSINESS.FetchUserInformation</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>BlockIP</servlet-name>
+        <servlet-class>BUSINESS.BlockIP</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>UserRegistration</servlet-name>
+        <url-pattern>/UserRegistration</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>CheckLogin</servlet-name>
+        <url-pattern>/CheckLogin</url-pattern>
+     </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>CheckAdmin</servlet-name>
+        <url-pattern>/CheckAdmin</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>AddAccountDetails</servlet-name>
+        <url-pattern>/AddAccountDetails</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>AddHoneypotAccountDetails</servlet-name>
+        <url-pattern>/AddHoneypotAccountDetails</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ActivationRequests</servlet-name>
+        <url-pattern>/ActivationRequests</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ActivateAccount</servlet-name>
+        <url-pattern>/ActivateAccount</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>UnblockAccount</servlet-name>
+        <url-pattern>/UnblockAccount</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>FetchUserInformation</servlet-name>
+        <url-pattern>/FetchUserInformation</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>BlockIP</servlet-name>
+        <url-pattern>/BlockIP</url-pattern>
+     </servlet-mapping>
+</web-app>

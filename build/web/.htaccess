@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.jsp [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.jsp -f
+RewriteRule ^ %{REQUEST_URI}.jsp [NC,L]
